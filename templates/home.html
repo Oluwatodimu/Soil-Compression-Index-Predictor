@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'homeStyle.css' %}">
+</head>
+
+<body>
+    <div class="hero">
+        <h2>Soil Compression Index Predictor</h2>
+    </div>
+
+    <div class="hero">
+        <form action="{% url 'result' %}">
+
+            {% csrf_token %}
+
+            <div class="input-group">
+                <label for="mc">Mositure content</label>
+                <input type="text" name="mc" id="mc" required>
+                <br>
+            </div>    
+
+            <div class="input-group">
+                <label for="ll">Liquid limit</label>
+                <input type="text" name="ll" id="ll" required>
+                <br>
+            </div>
+
+            <div class="input-group">
+                <label for="pi">Plastic index</label>
+                <input type="text" name="pi" id="pi" required>
+                <br>
+            </div>
+        
+            <div class="input-group">
+                <label for="ivr">Initial void ratio</label>
+                <input type="text" name="ivr" id="ivr" required>
+                <br>
+            </div>
+
+            <div class="input-group">
+                <label for="sg">Specific Gravity</label>
+                <input type="text" name="sg" id="sg" required>
+                <br>
+            </div>
+
+            <input type="submit" name="", value="predict!!!">
+
+        </form>
+
+    </div>
+
+</body>
+</html>
