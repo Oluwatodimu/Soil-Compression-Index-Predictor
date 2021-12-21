@@ -1,1 +1,1 @@
-# SoilCOmpressionIndexPredictor
+# SoilCompressionIndexPredictor
