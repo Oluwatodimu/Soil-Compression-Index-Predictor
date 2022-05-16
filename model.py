@@ -10,7 +10,7 @@ from sklearn.metrics import mean_squared_error
 import pickle
 
 # importing the clean data to python
-file = r'C:\Users\FinTrak-IFRS\Downloads\Bimpe_data.xlsx'
+file = r'C:\Users\Todimu-PC\Downloads\soilData.xlsx'
 data = pd.read_excel(file)
 
 # removing outliers from the dataset
